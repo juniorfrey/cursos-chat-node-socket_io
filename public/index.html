@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container-all">
+        <div class="ctn-form">
+            
+            <h1 class="title">Inicia Sessión</h1>
+
+            <form id="form_login">
+                <label for="">Usuario</label>
+                <input type="text" id="txt_user">
+                <label for="">Contraseña</label>
+                <input type="password" id="txt_pass">
+
+                <button type="button" class="btn-login" onclick="loguear()">Ingresar</button>
+
+            </form>
+        </div>
+        <div class="ctn-text">
+            <div class="capa" id="ctn_mensajes">
+                
+            </div>
+            <div class="capa2">
+                <form action="">
+                    <input type="text" placeholder="Escribe aqui" id="txt_mensaje"
+                    style="color: white; width: 75%; border-bottom: 1px solid oldlace;">
+                    
+                    <input type="text" placeholder="Destinatario" id="txt_destino"
+                    style="color: white; width: 75%; border-bottom: 1px solid oldlace;">
+
+                    <button type="button" style="width: 20%; background-color: transparent; outline: none; border: none; cursor: pointer;">
+                        <img src="./communications.png" alt="" style="width: 24px; height: 20px;" id="enviar" onclick="enviar_mensaje()"> 
+                    </button>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="funciones_socket.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

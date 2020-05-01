@@ -1,0 +1,8 @@
+1 - Instalaciones de dependecias
+    socket (web socket)
+    express (framework)
+
+2 - configuracion de servidor
+    - Crear carpeta socket
+      - crear archivo server.js
+    - Crear archivo index.html
